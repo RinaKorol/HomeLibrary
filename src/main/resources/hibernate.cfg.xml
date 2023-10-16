@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+    <property name = "hibernate.dialect">
+        org.hibernate.dialect.Oracle10gDialect
+    </property>
+        <property name = "hibernate.connection.driver_class">
+            com.oracle.database.jdbc:ojdbc8:23.2.0.0
+        </property>
+        <property name = "hibernate.connection.url">
+            jdbc:oracle:thin:@localhost:1521:XE
+        </property>
+        <property name = "hibernate.connection.username">
+            sys as sysdba
+        </property>
+        <property name = "hibernate.connection.password">
+            UaBS$6dc
+        </property>
+    </session-factory>
+</hibernate-configuration>
